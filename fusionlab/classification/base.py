@@ -53,7 +53,7 @@ class HFClassificationModel(nn.Module):
         else:
             loss = None
         # return dictionary for hugginface trainer
-        return {'loss':loss, 'logits':logits, 'hidden_states':None}
+        return {'loss':loss, 'logits':logits}
 
 # Test the function
 if __name__ == '__main__':
